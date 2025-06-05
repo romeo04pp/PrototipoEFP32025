@@ -37,11 +37,14 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuMantenimientosActionPerformed"/>
               </Events>
               <SubComponents>
-                <Menu class="javax.swing.JMenu" name="jMenu5">
+                <MenuItem class="javax.swing.JMenuItem" name="mantbodegas">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="CRUD Bodegas"/>
                   </Properties>
-                </Menu>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mantbodegasActionPerformed"/>
+                  </Events>
+                </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="MantenimientoUsuarios">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Mantenimiento Usuarios"/>

@@ -27,15 +27,17 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
 
     public void llenadoDeTablas() {
         DefaultTableModel modelo = new DefaultTableModel();
-        modelo.addColumn("ID Perfil");
+        modelo.addColumn("ID");
+        modelo.addColumn("Tipo");
         modelo.addColumn("Nombre");
-        modelo.addColumn("Estatus");
+        modelo.addColumn("Direccion");
+        modelo.addColumn("Estado");
         
         BodegaDAO perfilDAO = new BodegaDAO();
         List<Bodega> perfil = perfilDAO.select();
         
         tablaSedes.setModel(modelo);
-        String[] dato = new String[3];
+        String[] dato = new String[5];
         for (int i = 0; i < perfil.size(); i++) {
             dato[0] = perfil.get(i).getId();
             dato[1] = perfil.get(i).getIdTipobodega();
@@ -93,7 +95,7 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
         label4 = new javax.swing.JLabel();
         lb = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        txtAyudas = new javax.swing.JButton();
         label8 = new javax.swing.JLabel();
         txtEstatus = new javax.swing.JTextField();
         label5 = new javax.swing.JLabel();
@@ -192,10 +194,10 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
 
         jButton1.setText("jButton1");
 
-        jButton2.setText("Ayuda");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        txtAyudas.setText("Ayuda");
+        txtAyudas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                txtAyudasActionPerformed(evt);
             }
         });
 
@@ -300,7 +302,7 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
                         .addComponent(jButton1)
                         .addGap(70, 70, 70))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton2)
+                        .addComponent(txtAyudas)
                         .addGap(135, 135, 135)))
                 .addComponent(label4)
                 .addGap(46, 46, 46)
@@ -354,7 +356,7 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(label4)
                             .addComponent(cbox_empleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton2)
+                            .addComponent(txtAyudas)
                             .addComponent(txtReportes)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
@@ -434,7 +436,7 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cbox_empleadoActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void txtAyudasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAyudasActionPerformed
         // TODO add your handling code here:
         try {
            //Verificacion si el archivo de ayuda existe
@@ -457,12 +459,12 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
         int resultadoBitacora=0;
         Bitacora bitacoraRegistro = new Bitacora();
         resultadoBitacora = bitacoraRegistro.setIngresarBitacora(usuarioEnSesion.getIdUsuario(), APLICACION,  "Gestion Ayuda MetodoDePago");
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_txtAyudasActionPerformed
 
     private void txtReportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtReportesActionPerformed
         // TODO add your handling code here:
          //Instancia del metododepagodao
-        MetododepagoDAO metododepagoDAO = new MetododepagoDAO();
+        BodegaDAO metododepagoDAO = new BodegaDAO();
         //Llamado al metodo de imprimir reporte
         metododepagoDAO.imprimirReporte(); 
         
@@ -481,7 +483,6 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
     private javax.swing.JButton btnRegistrar;
     private javax.swing.JComboBox<String> cbox_empleado;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel label1;
     private javax.swing.JLabel label3;
@@ -494,6 +495,7 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
     private javax.swing.JLabel lb2;
     private javax.swing.JLabel lbusu;
     private javax.swing.JTable tablaSedes;
+    private javax.swing.JButton txtAyudas;
     private javax.swing.JTextField txtDireccion;
     private javax.swing.JTextField txtEstatus;
     private javax.swing.JTextField txtNombre;

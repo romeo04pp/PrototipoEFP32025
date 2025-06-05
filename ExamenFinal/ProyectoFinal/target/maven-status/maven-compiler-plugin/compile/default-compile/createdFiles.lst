@@ -15,6 +15,7 @@ vista\MdiCompras$7.class
 vista\bancos\TransacionalConciliacion_bancaria$9.class
 vista\bancos\MantenimientoTipo_moneda$6.class
 vista\bancos\MantenimientoTipo_pago$8.class
+vista\seguridad\MantenimientoBodega$5.class
 vista\MdiBancoPro$13.class
 Controlador\seguridad\Usuario.class
 vista\ventas_cxc\MantenimientoClientes$4.class
@@ -37,6 +38,7 @@ vista\MdiGeneral$1.class
 vista\bancos\MantenimientoTipo_operacion_bancaria$4.class
 vista\bancos\MantenimientoTipo_moneda$1.class
 vista\bancos\TransacionalConciliacion_bancaria.class
+vista\MdiGeneral$15.class
 vista\bancos\TransacionalConciliacion_bancaria$4.class
 vista\Mdi_VentasCC$7.class
 vista\seguridad\Mantenimiento_Derecho$4.class
@@ -76,6 +78,7 @@ Controlador\compras_cxp\Proveedor.class
 Modelo\seguridad\AplicacionDAO.class
 vista\compras_cxp\Compras$3.class
 Modelo\ventas_cxc\VentascxcDAO.class
+vista\seguridad\MantenimientoBodega.class
 vista\seguridad\AplicacionaUsuariosDEF$10.class
 Controlador\compras_cxp\Metododepago.class
 vista\NewJPanel$1.class
@@ -258,6 +261,7 @@ vista\ventas_cxc\TransaccionalVentasCC$1.class
 vista\compras_cxp\MantenimientoProveedores$1.class
 vista\seguridad\MantenimientoBitacora$2.class
 vista\seguridad\MantenimientoAplicacion$7.class
+vista\seguridad\MantenimientoBodega$1.class
 vista\MdiBancoPro$mdiBancopro.class
 vista\MdiGeneral$2.class
 vista\bancos\MantenimientoTipo_cuenta$1.class
@@ -320,8 +324,10 @@ vista\MdiCompras$4.class
 vista\seguridad\AplicacionaUsuariosDEF$2.class
 Modelo\compras_cxp\Compras_cppDAO.class
 vista\compras_cxp\MantenimientoMetododePago$8.class
+vista\seguridad\MantenimientoBodega$8.class
 vista\compras_cxp\MantenimientoMetododePago$2.class
 vista\bancos\MantenimientoBancos$6.class
+vista\seguridad\MantenimientoBodega$2.class
 vista\bancos\TransacionalMovimiento_bancario$3.class
 Controlador\seguridad\UsuarioConectado.class
 vista\MdiBancoMan$4.class
@@ -342,12 +348,15 @@ vista\seguridad\AplicacionaUsuariosDEF$3.class
 vista\bancos\MantenimientoBancos$5.class
 vista\compras_cxp\MantenimientoProveedores$6.class
 vista\MdiBancoMan$5.class
+vista\seguridad\MantenimientoBodega$9.class
 vista\seguridad\MantenimientoPerfiles$3.class
 vista\seguridad\MantenimientoAplicacion$2.class
 vista\ventas_cxc\MantenimientoVendedores.class
 vista\bancos\MantenimientoTipo_cuenta.class
 vista\ventas_cxc\MantenimientoClientes$11.class
+Controlador\seguridad\Bodega.class
 vista\ventas_cxc\TransaccionalVentasCC$5.class
+vista\seguridad\MantenimientoBodega$3.class
 vista\bancos\MantenimientoTipo_moneda$2.class
 vista\seguridad\MantenimientoPerfiles$4.class
 vista\bancos\MantenimientoTipo_pago$4.class
@@ -355,6 +364,7 @@ vista\MdiGenebac$5.class
 vista\compras_cxp\MantenimientoProveedores$5.class
 Modelo\bancos\tipo_operacion_bancariaDAO.class
 Controlador\seguridad\RelPerfUsu.class
+vista\seguridad\MantenimientoBodega$4.class
 vista\MdiGenebac$11.class
 vista\bancos\MantenimientoBancos$10.class
 vista\bancos\TransacionalMovimiento_bancario$1.class
@@ -387,6 +397,7 @@ Modelo\seguridad\RelPerfAplDAO.class
 vista\MdiBancoMan$9.class
 vista\seguridad\AplicacionaUsuariosDEF$6.class
 vista\seguridad\Mantenimiento_Derecho$1.class
+Modelo\seguridad\BodegaDAO.class
 vista\ventas_cxc\TransaccionalVentasCC$9.class
 vista\bancos\MantenimientoTipo_operacion_bancaria$1.class
 vista\compras_cxp\MantenimientoMetododePago$3.class
@@ -395,6 +406,7 @@ vista\bancos\MantenimientoTipo_pago.class
 vista\seguridad\MantenimientoUsuario$8.class
 vista\seguridad\MantenimientoRelPerfApl$13.class
 vista\bancos\MantenimientoBancos$2.class
+vista\seguridad\MantenimientoBodega$6.class
 vista\MdiGenebac$9.class
 vista\seguridad\AplicacionaUsuariosDEF$14.class
 vista\seguridad\Mantenimiento_Derecho$2.class
@@ -402,6 +414,7 @@ vista\ventas_cxc\MantenimientoClientes.class
 Controlador\seguridad\Derechosusuapl.class
 vista\MdiGenebac$10.class
 vista\compras_cxp\MantenimientoMetododePago$4.class
+vista\seguridad\MantenimientoBodega$7.class
 vista\MdiGeneral$9.class
 vista\seguridad\MantenimientoUsuario$7.class
 vista\seguridad\AplicacionaUsuariosDEF$7.class

@@ -21,6 +21,7 @@ import vista.seguridad.MantenimientoRelPerfApl;
 import vista.seguridad.MantenimientoRelPerfUsu;
 import vista.compras_cxp.MantenimientoProveedores;
 import vista.compras_cxp.MantenimientoMetododePago;
+import vista.seguridad.MantenimientoBodega;
 
 /**
  *
@@ -58,7 +59,7 @@ public class MdiGeneral extends javax.swing.JFrame {
         MenuGeneralSeguridad = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
         MenuMantenimientos = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
+        mantbodegas = new javax.swing.JMenuItem();
         MantenimientoUsuarios = new javax.swing.JMenuItem();
         MantenimientoAplicaciones = new javax.swing.JMenuItem();
         MantenimientoPerfiles = new javax.swing.JMenuItem();
@@ -106,8 +107,13 @@ public class MdiGeneral extends javax.swing.JFrame {
             }
         });
 
-        jMenu5.setText("CRUD Bodegas");
-        MenuMantenimientos.add(jMenu5);
+        mantbodegas.setText("CRUD Bodegas");
+        mantbodegas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mantbodegasActionPerformed(evt);
+            }
+        });
+        MenuMantenimientos.add(mantbodegas);
 
         MantenimientoUsuarios.setText("Mantenimiento Usuarios");
         MantenimientoUsuarios.addActionListener(new java.awt.event.ActionListener() {
@@ -386,6 +392,19 @@ for (javax.swing.JInternalFrame frame : jDesktopPane1.getAllFrames()) {
      ventana.setLocation((desktopSize.width - FrameSize.width) / 2, (desktopSize.height - FrameSize.height) / 2);
     }//GEN-LAST:event_MantenimientoMetododepagoActionPerformed
 
+    private void mantbodegasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mantbodegasActionPerformed
+        // TODO add your handling code here:
+        for (javax.swing.JInternalFrame frame : jDesktopPane1.getAllFrames()) {
+    frame.dispose(); // Cierra cada ventana abierta
+}
+       MantenimientoBodega ventana = new MantenimientoBodega();
+       jDesktopPane1.add(ventana);
+       Dimension desktopSize = jDesktopPane1.getSize();
+       Dimension FrameSize = ventana.getSize();
+       ventana.setLocation((desktopSize.width - FrameSize.width) / 2, (desktopSize.height - FrameSize.height) / 2);
+    
+    }//GEN-LAST:event_mantbodegasActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -442,11 +461,11 @@ for (javax.swing.JInternalFrame frame : jDesktopPane1.getAllFrames()) {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem mantbodegas;
     private javax.swing.JMenu mnuAsignaciones;
     private javax.swing.JMenuItem salirSistema;
     // End of variables declaration//GEN-END:variables
