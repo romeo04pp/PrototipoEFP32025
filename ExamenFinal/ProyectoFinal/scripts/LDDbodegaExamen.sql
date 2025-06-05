@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS bodega(
+id VARCHAR(15),
+idTipobodega VARCHAR(15),
+nombre VARCHAR(30)
+direccion VARCHAR(65),
+estado VARCHAR(1),
+PRIMARY KEY (id)
+)ENGINE=InnoDB CHARACTER SET = latin1;

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e58b0ce5-6fdc-4ffb-bf61-badd85cbed43">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM sig2k25.aplicacion;]]>
+	</queryString>
+	<field name="id_aplicacion" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre_aplicacion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estatus_aplicacion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="39" y="2" width="100" height="20" uuid="6922565a-bd32-4e79-9c30-5fd7ceca66b9"/>
+				<text><![CDATA[id_aplicacion    ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="139" y="2" width="100" height="20" uuid="290688a1-f562-4381-a2a2-7e8fe7fb6e71"/>
+				<text><![CDATA[nombre_aplicacion	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="239" y="0" width="100" height="20" uuid="8557236e-bd4f-4975-833c-931f4bc84d3b"/>
+				<text><![CDATA[estatus_aplicacion   ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="39" y="10" width="100" height="20" uuid="47486609-479e-450c-82c6-5a14ec06685c"/>
+				<textFieldExpression><![CDATA[$F{id_aplicacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="10" width="100" height="20" uuid="4e8403ef-46b7-4daa-85db-d03565c9d3b8"/>
+				<textFieldExpression><![CDATA[$F{nombre_aplicacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="239" y="10" width="100" height="20" uuid="14e44c9b-f067-475a-9e04-363e28a95ecd"/>
+				<textFieldExpression><![CDATA[$F{estatus_aplicacion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
