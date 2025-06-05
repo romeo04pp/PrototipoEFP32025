@@ -56,7 +56,9 @@ public class MdiGeneral extends javax.swing.JFrame {
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         MenuGeneralSeguridad = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
         MenuMantenimientos = new javax.swing.JMenu();
+        jMenu5 = new javax.swing.JMenu();
         MantenimientoUsuarios = new javax.swing.JMenuItem();
         MantenimientoAplicaciones = new javax.swing.JMenuItem();
         MantenimientoPerfiles = new javax.swing.JMenuItem();
@@ -66,6 +68,9 @@ public class MdiGeneral extends javax.swing.JFrame {
         AsignacionesAplicacionesPerfil = new javax.swing.JMenuItem();
         AsignacionAplicacionesUsuario = new javax.swing.JMenuItem();
         AsignacionPerfilUsuario = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
         Bitacora = new javax.swing.JMenu();
         ConsultaBitacora = new javax.swing.JMenuItem();
         salirSistema = new javax.swing.JMenuItem();
@@ -91,12 +96,18 @@ public class MdiGeneral extends javax.swing.JFrame {
 
         MenuGeneralSeguridad.setText("Seguridad");
 
-        MenuMantenimientos.setText("Mantenimientos");
+        jMenu1.setText("Abrir");
+        MenuGeneralSeguridad.add(jMenu1);
+
+        MenuMantenimientos.setText("Catalogos");
         MenuMantenimientos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MenuMantenimientosActionPerformed(evt);
             }
         });
+
+        jMenu5.setText("CRUD Bodegas");
+        MenuMantenimientos.add(jMenu5);
 
         MantenimientoUsuarios.setText("Mantenimiento Usuarios");
         MantenimientoUsuarios.addActionListener(new java.awt.event.ActionListener() {
@@ -140,7 +151,7 @@ public class MdiGeneral extends javax.swing.JFrame {
 
         MenuGeneralSeguridad.add(MenuMantenimientos);
 
-        mnuAsignaciones.setText("Asignaciones");
+        mnuAsignaciones.setText("Procesos");
 
         AsignacionesAplicacionesPerfil.setText("Asignacion Aplicaciones a Perfil");
         AsignacionesAplicacionesPerfil.addActionListener(new java.awt.event.ActionListener() {
@@ -167,6 +178,15 @@ public class MdiGeneral extends javax.swing.JFrame {
         mnuAsignaciones.add(AsignacionPerfilUsuario);
 
         MenuGeneralSeguridad.add(mnuAsignaciones);
+
+        jMenu2.setText("Informes");
+        MenuGeneralSeguridad.add(jMenu2);
+
+        jMenu3.setText("Herramientas");
+        MenuGeneralSeguridad.add(jMenu3);
+
+        jMenu4.setText("Ayuda");
+        MenuGeneralSeguridad.add(jMenu4);
 
         Bitacora.setText("Bitacora");
         Bitacora.addActionListener(new java.awt.event.ActionListener() {
@@ -418,6 +438,11 @@ for (javax.swing.JInternalFrame frame : jDesktopPane1.getAllFrames()) {
     private javax.swing.JMenu MenuGeneralSeguridad;
     private javax.swing.JMenu MenuMantenimientos;
     private javax.swing.JDesktopPane jDesktopPane1;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;

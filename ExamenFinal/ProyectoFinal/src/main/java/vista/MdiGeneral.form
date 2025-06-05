@@ -24,14 +24,24 @@
             <Property name="text" type="java.lang.String" value="Seguridad"/>
           </Properties>
           <SubComponents>
+            <Menu class="javax.swing.JMenu" name="jMenu1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Abrir"/>
+              </Properties>
+            </Menu>
             <Menu class="javax.swing.JMenu" name="MenuMantenimientos">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Mantenimientos"/>
+                <Property name="text" type="java.lang.String" value="Catalogos"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuMantenimientosActionPerformed"/>
               </Events>
               <SubComponents>
+                <Menu class="javax.swing.JMenu" name="jMenu5">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="CRUD Bodegas"/>
+                  </Properties>
+                </Menu>
                 <MenuItem class="javax.swing.JMenuItem" name="MantenimientoUsuarios">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Mantenimiento Usuarios"/>
@@ -76,7 +86,7 @@
             </Menu>
             <Menu class="javax.swing.JMenu" name="mnuAsignaciones">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Asignaciones"/>
+                <Property name="text" type="java.lang.String" value="Procesos"/>
               </Properties>
               <SubComponents>
                 <MenuItem class="javax.swing.JMenuItem" name="AsignacionesAplicacionesPerfil">
@@ -104,6 +114,21 @@
                   </Events>
                 </MenuItem>
               </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="jMenu2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Informes"/>
+              </Properties>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="jMenu3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Herramientas"/>
+              </Properties>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="jMenu4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ayuda"/>
+              </Properties>
             </Menu>
             <Menu class="javax.swing.JMenu" name="Bitacora">
               <Properties>
