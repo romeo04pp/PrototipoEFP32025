@@ -9,10 +9,18 @@ import Controlador.seguridad.Bodega;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import Modelo.Conexion;
+import java.io.File;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
+import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.view.JasperViewer;
 
 /**
  *
@@ -181,5 +189,31 @@ public class BodegaDAO {
 
         return perfil; 
     }
+        public void imprimirReporte() {
+       //Conexion con la base de datos
+        Connection conn = null;
+        // Mapa de parámetros que se puede enviar al reporte (aquí está vacío)
+        Map p = new HashMap();
+        // Objeto que representa el reporte compilado
+        JasperReport report;
+        // Objeto que representa el reporte ya lleno con los datos
+        JasperPrint print;
+
+        try {
+            //Conexion con la base de datos
+            conn = Conexion.getConnection();
+            report = JasperCompileManager.compileReport(new File("").getAbsolutePath()
+                    + "/src/main/java/reportes_compras_cxp/"+ "ReporteMetodoDePago.jrxml");
+            //se llena el reporte con los datos obtenidos
+            print = JasperFillManager.fillReport(report, p, conn);
+            JasperViewer view = new JasperViewer(print, false);
+            view.setTitle("Reporte de Vendedores");
+            view.setVisible(true);
+
+        } catch (Exception e) {
+            // Si ocurre cualquier error, se imprime la traza del error en consola
+            e.printStackTrace();
+        }
+    }    
         
 }
