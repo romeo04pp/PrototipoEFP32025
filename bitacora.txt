@@ -1,0 +1,53 @@
+commit 7f8c7461a83176c40ff29dbfd27fa426adae989f
+Author: Pablo Palencia <ppalenciar1@miumg.edu.gt>
+Date:   Thu Jun 5 13:21:03 2025 -0600
+
+    final
+
+commit 8b2ca85c2f047340eb7ee0469a575b4fb0cd3816
+Author: Pablo Palencia <ppalenciar1@miumg.edu.gt>
+Date:   Thu Jun 5 13:08:22 2025 -0600
+
+    subiendo finales
+
+commit 5b2c1d5faab3d71f4c8839cafeb69d551dd599b0
+Author: Pablo Palencia <ppalenciar1@miumg.edu.gt>
+Date:   Thu Jun 5 12:53:45 2025 -0600
+
+    subiendo cambios
+
+commit aa015c3de07e5c5da6b064ed3493084d80c18403
+Author: Pablo Palencia <ppalenciar1@miumg.edu.gt>
+Date:   Thu Jun 5 12:51:14 2025 -0600
+
+    subiendo mantenimiento vista
+
+commit a30c5fde1f9f21c892b042f4bae39e615d4267ff
+Author: Pablo Palencia <ppalenciar1@miumg.edu.gt>
+Date:   Thu Jun 5 12:34:06 2025 -0600
+
+    subiendo bodegaDao
+
+commit 0b1c137abf379cc96f5c878d52eb1d01017f084d
+Author: Pablo Palencia <ppalenciar1@miumg.edu.gt>
+Date:   Thu Jun 5 12:18:54 2025 -0600
+
+    subiendo bodega.java
+
+commit 6dd66d7368449d414dfedb29a1ceeebf9b51c615
+Author: Pablo Palencia <ppalenciar1@miumg.edu.gt>
+Date:   Thu Jun 5 12:13:24 2025 -0600
+
+    LDD y Menus
+
+commit 6c3c4e624f1ba2a3fdffe1815cb9f8546fde5597
+Author: Pablo Palencia <ppalenciar1@miumg.edu.gt>
+Date:   Thu Jun 5 12:03:56 2025 -0600
+
+    Subiendo base del programa
+
+commit ab5bb7ef82f7486fa17dca198a151780860fec1c
+Author: Pablo <156860497+romeo04pp@users.noreply.github.com>
+Date:   Thu Jun 5 11:47:16 2025 -0600
+
+    Initial commit
