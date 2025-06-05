@@ -15,6 +15,7 @@ import javax.swing.table.DefaultTableModel;
 import java.io.File;
 import Controlador.seguridad.Bitacora;
 import Controlador.seguridad.UsuarioConectado;
+import Modelo.compras_cxp.MetododepagoDAO;
 
 /**
  *
@@ -211,6 +212,11 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
         txtidPerfil.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(204, 204, 204)));
 
         txtReportes.setText("Reportes");
+        txtReportes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtReportesActionPerformed(evt);
+            }
+        });
 
         label6.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         label6.setText("Direccion");
@@ -431,19 +437,40 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         try {
-            if ((new File("src\\main\\java\\ayudas\\ProcesoMayor.chm")).exists()) {
+           //Verificacion si el archivo de ayuda existe
+            if ((new File("src\\main\\java\\ayudas\\ayudasComprasyCuentasPorPagar.chm")).exists()) {
                 Process p = Runtime
                         .getRuntime()
-                        .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\ayudas\\ProcesoMayor.chm");
+                        .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\ayudas\\ayudasComprasyCuentasPorPagar.chm");
                 p.waitFor();
             } else {
+                //Muestra mensaje en consola si no se encuentra el archivo de ayuda
                 System.out.println("La ayuda no Fue encontrada");
             }
             System.out.println("Correcto");
         } catch (Exception ex) {
+            // En caso de error, imprime la traza para diagnóstico
             ex.printStackTrace();
-        }
+        }  
+       
+       UsuarioConectado usuarioEnSesion = new UsuarioConectado();
+        int resultadoBitacora=0;
+        Bitacora bitacoraRegistro = new Bitacora();
+        resultadoBitacora = bitacoraRegistro.setIngresarBitacora(usuarioEnSesion.getIdUsuario(), APLICACION,  "Gestion Ayuda MetodoDePago");
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void txtReportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtReportesActionPerformed
+        // TODO add your handling code here:
+         //Instancia del metododepagodao
+        MetododepagoDAO metododepagoDAO = new MetododepagoDAO();
+        //Llamado al metodo de imprimir reporte
+        metododepagoDAO.imprimirReporte(); 
+        
+        UsuarioConectado usuarioEnSesion = new UsuarioConectado();
+        int resultadoBitacora=0;
+        Bitacora bitacoraRegistro = new Bitacora();
+        resultadoBitacora = bitacoraRegistro.setIngresarBitacora(usuarioEnSesion.getIdUsuario(), APLICACION,  "Visualizar reporte MetodoDePago");
+    }//GEN-LAST:event_txtReportesActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
