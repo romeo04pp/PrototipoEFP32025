@@ -4,15 +4,15 @@
 	<property name="ireport.x" value="329"/>
 	<property name="ireport.y" value="233"/>
 	<queryString language="SQL">
-		<![CDATA[Select * from sig2k25.metodo_pago]]>
+		<![CDATA[Select * from sig2k25.bodega]]>
 	</queryString>
-	<field name="id_metodo_pago" class="java.lang.Integer">
+	<field name="id" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="nombre_metodo_pago" class="java.lang.String">
+	<field name="nombre" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="estatus_metodo_pago" class="java.lang.Integer">
+	<field name="estado" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<background>
@@ -31,21 +31,21 @@
 				<textElement>
 					<font fontName="Bodoni MT" size="14"/>
 				</textElement>
-				<text><![CDATA[id_metodo_pago]]></text>
+				<text><![CDATA[id]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="176" y="2" width="145" height="20" uuid="9384dffe-3e93-4ddc-8668-4c043ebaba22"/>
 				<textElement>
 					<font fontName="Bodoni MT" size="14"/>
 				</textElement>
-				<text><![CDATA[nombre_metodo_pago]]></text>
+				<text><![CDATA[nombre]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="344" y="2" width="139" height="20" uuid="952e159a-6dad-4780-af15-eda970a6aa6a"/>
 				<textElement>
 					<font fontName="Bodoni MT" size="14"/>
 				</textElement>
-				<text><![CDATA[estatus_metodo_pago]]></text>
+				<text><![CDATA[estado]]></text>
 			</staticText>
 			<ellipse>
 				<reportElement mode="Transparent" x="0" y="0" width="159" height="29" uuid="fa81ee04-a12e-4a47-8914-96884f22ce77"/>
@@ -63,17 +63,17 @@
 			<textField>
 				<reportElement x="38" y="19" width="100" height="20" uuid="25475c90-538b-4faf-9e26-d86787c97aef"/>
 				<textElement textAlignment="Center"/>
-				<textFieldExpression><![CDATA[$F{id_metodo_pago}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="197" y="19" width="100" height="20" uuid="cff1263c-7ba4-4027-b6df-76c9d00feb0b"/>
 				<textElement textAlignment="Center"/>
-				<textFieldExpression><![CDATA[$F{nombre_metodo_pago}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="357" y="19" width="100" height="20" uuid="f69a6e0e-7ae8-4a7e-9161-c4f82c6b1239"/>
 				<textElement textAlignment="Center"/>
-				<textFieldExpression><![CDATA[$F{estatus_metodo_pago}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{estado}]]></textFieldExpression>
 			</textField>
 			<rectangle>
 				<reportElement mode="Transparent" x="0" y="16" width="471" height="20" uuid="7526930c-bfb9-4078-897d-592e1eec58f4"/>

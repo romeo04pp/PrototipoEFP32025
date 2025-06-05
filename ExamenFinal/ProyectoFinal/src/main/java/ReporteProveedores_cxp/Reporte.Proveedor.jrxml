@@ -14,18 +14,20 @@
 		</conditionalStyle>
 	</style>
 	<queryString language="SQL">
-		<![CDATA[SELECT * FROM proveedor;]]>
+		<![CDATA[SELECT * FROM bodega;]]>
 	</queryString>
-	<field name="id_proveedor" class="java.lang.Integer">
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+        <field name="idTipobodega" class="java.lang.String">
+	<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="nombre_proveedor" class="java.lang.String">
+	<field name="direccion" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="direccion_proveedor" class="java.lang.String">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="telefono_proveedor" class="java.lang.String">
+	<field name="estado" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="email_proveedor" class="java.lang.String">
@@ -40,25 +42,25 @@
 	<field name="fecha_registro" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<group name="id_proveedor">
+	<group name="id">
 		<groupExpression><![CDATA[$F{id_proveedor}]]></groupExpression>
 		<groupHeader>
 			<band height="37">
 				<textField isStretchWithOverflow="true">
 					<reportElement style="Detail" x="1" y="10" width="138" height="15" uuid="c893422d-96e5-4859-a929-cf9c2ddff9b7"/>
-					<textFieldExpression><![CDATA[$F{direccion_proveedor}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{idTipobodega}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
 					<reportElement style="Detail" x="139" y="10" width="138" height="15" uuid="998ee626-7ded-49ff-bd99-1afc08ae172f"/>
-					<textFieldExpression><![CDATA[$F{telefono_proveedor}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
 					<reportElement style="Detail" x="276" y="10" width="138" height="15" uuid="0278e449-336f-4a6f-8a19-cc2a51542045"/>
-					<textFieldExpression><![CDATA[$F{email_proveedor}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true">
 					<reportElement style="Detail" x="414" y="10" width="138" height="15" uuid="9b96f5f6-7838-4fd2-9b42-d3a30a73dcc9"/>
-					<textFieldExpression><![CDATA[$F{saldo_proveedor}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{estado}]]></textFieldExpression>
 				</textField>
 			</band>
 		</groupHeader>

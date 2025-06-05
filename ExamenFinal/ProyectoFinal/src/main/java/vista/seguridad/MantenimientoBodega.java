@@ -113,7 +113,7 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
-        setTitle("Mantenimiento Sede");
+        setTitle("Mantenimiento Bodega");
         setVisible(true);
 
         btnEliminar.setText("Eliminar");
